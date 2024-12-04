@@ -1,0 +1,11 @@
+form img {
+    width: 10%;
+    height: 10%;
+    margin: 1% 0%;
+    /* float: left; */
+}
+
+form label {
+    align-items: center;
+    text-align: center;
+}
