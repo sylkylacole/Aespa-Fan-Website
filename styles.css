@@ -1,6 +1,104 @@
-form img {
+/* color definitions */
+:root {
+    --text: #1a1a1a;
+    --background: #ededed;
+    --transparent: #ededed00;
+    --header: #1a1a1a85;
+    --red: #e30b0b;
+    --gray: #9e9e9e;
+    --green: #1a3e0a;
+}
+
+/* Universal css */
+* {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0%;
+    padding: 0%;
+}
+
+/* index.html */
+
+header {
+    background-color: var(--header);
+    color: var(--background);
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+nav {
+    text-align: center;
+}
+
+#logo {
     width: 10%;
-    height: 10%;
+    float: left;
+    padding: 0%;
+    background-color: var(--transparent);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+
+ul li {
+    float: right;
+    margin: 1.5% 5%;
+    padding: 0%;
+}
+
+ul li a {
+    display: block;
+    color: var(--text);
+    background-color: var(--transparent);
+    text-decoration: none;
+    padding: 0%;
+}
+
+
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+video {
+    background-color: var(--transparent);
+}
+
+#rectangle {
+    display: block;
+    position: absolute;
+    left: 90%;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+#home, #about, #discography, #member-quiz, #song-quiz {
+    width: 100vw;
+    height: 100vh;
+}
+
+ /* quiz.html*/
+
+form img {
+    width: vw 10;
+    height: vh 10;
     margin: 1% 0%;
     /* float: left; */
 }

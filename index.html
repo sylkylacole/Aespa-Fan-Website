@@ -6,28 +6,37 @@
     <title>MY Aespa</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#discography">Discography</a>
-        <a href="#member-quiz">Member Quiz</a>
-        <a href="#song-quiz">Song Quiz</a>
+        <nav>
+            <img src="images/aespa_logo.png" alt="aespa_logo" id="logo">
+            <ul>
+                <li><a href="#song-quiz">Song Quiz</a></li>
+                <li><a href="#member-quiz">Member Quiz</a></li>
+                <li><a href="#discography">Discography</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="main">
-        <section id="home"></section> <!-- Designed home page that will be seen if you click the website link! MUST BE EYE CATCHING -->
+        <section id="home">
+            <!-- <div id="rectangle">.</div> -->
+            <video autoplay muted loop src="videos/whiplash-aespa.mp4" id="background-video"></video>
+        </section> <!-- Designed home page that will be seen if you click the website link! MUST BE EYE CATCHING -->
         <section id="about"></section> <!-- General information about aespa as a group -->
         <section id="discography"></section> <!-- A list of Aespa albums; clicking an album will take you to its data page -->
         <section id="member-quiz">
             <h2>Ready to see if you know the girls? Click the button below to access the Aespa member quiz!</h2>
-            <button><p><a href="member-quiz.html">Start Quiz!</a></p></button>
+            <button><a href="member-quiz.html">Start Quiz!</a></button>
         </section> <!-- A picture of a member will pop up and they will have to guess the name; this is a different page -->
         <section id="song-quiz">
             <h2>Test your ears and see if you can name all of these Aespa songs!</h2>
-            <button><p><a href="song-quiz.html">Start Quiz!</a></p></button>
+            <button><a href="song-quiz.html">Start Quiz!</a></button>
         </section> <!-- A picece of audio will pop up and they will have to guess the song; this is a different page -->
     </main>
     <footer></footer>
