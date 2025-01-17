@@ -21,14 +21,16 @@
 
 header {
     background-color: var(--header);
-    color: var(--background);
     height: 10vh;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 
-
+a:hover {
+    color: var(--red);
+}
 
 
 nav {
@@ -58,13 +60,10 @@ ul li {
 ul li a {
     display: block;
     color: var(--text);
-    background-color: var(--transparent);
+    background-color: var(--header);
     text-decoration: none;
     padding: 0%;
 }
-
-
-
 
 
 section {
@@ -73,20 +72,12 @@ section {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 
 video {
     background-color: var(--transparent);
-}
-
-#rectangle {
-    display: block;
-    position: absolute;
-    left: 90%;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
 }
 
 #home, #about, #discography, #member-quiz, #song-quiz {
