@@ -85,6 +85,56 @@ video {
     height: 100vh;
 }
 
+
+/* about.html */
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 2%;
+}
+
+#content {
+    margin-top: 5%;
+    display: inline;
+    position: relative;
+    left: 100px;
+    text-align: center;
+}
+
+#about-description {
+    width: 100ch;
+}
+
+.member-name {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+#members-left {
+    float: left;
+
+}
+
+#members-right {
+    float: right;
+}
+
+.members {
+    width: 45%;
+    height: 45%;
+    margin: auto;
+}
+
+
+
+
+
+
  /* quiz.html*/
 
 form img {
