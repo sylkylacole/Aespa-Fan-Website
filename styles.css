@@ -75,29 +75,42 @@ section {
     overflow: hidden;
 }
 
-
-video {
-    background-color: var(--transparent);
-}
-
-#home, #about, #discography, #member-quiz, #song-quiz {
+#home, #about, #baest-releases, #member-quiz, #song-quiz {
     width: 100vw;
     height: 100vh;
 }
 
 
-/* about.html */
+img:hover {
+    border: #e30b0b 5px inset;
+    cursor: pointer;
+}
+
+
+/* Main */
+
+video {
+    background-color: var(--transparent);
+}
+
+
+
+
+/* about */
 
 h2 {
     font-size: 3rem;
+    text-align: center;
+    margin: auto;
 }
 
 p {
     font-size: 1.2em;
     margin-top: 2%;
+    text-align: center;
 }
 
-#content {
+.content {
     margin-top: 5%;
     display: inline;
     position: relative;
@@ -105,8 +118,9 @@ p {
     text-align: center;
 }
 
-#about-description {
+.description {
     width: 100ch;
+    margin: auto;
 }
 
 .member-name {
@@ -125,11 +139,34 @@ p {
 }
 
 .members {
-    width: 45%;
-    height: 45%;
+    width: 25%;
+    height: 25%;
     margin: auto;
 }
 
+
+/* baest-releases section */
+
+.release-name {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+#release-left {
+    float: left;
+
+}
+
+#release-right {
+    float: right;
+}
+
+.release {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+}
 
 
 
