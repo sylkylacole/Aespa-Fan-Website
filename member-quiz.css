@@ -25,22 +25,60 @@ body {
 
 h1 {
     text-align: center;
-
+    font-size: 5rem;
 }
 
 #form {
 
 }
 
+span {
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+legend {
+    display: block;
+    margin: 1% auto;
+    font-size: 3rem;
+}
+
+form label {
+    display: inline-block;
+    margin: 1% auto;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
 
 
 form img {
-    width: 50%;
-    height: 50%;
-    /* margin: 5%; */
+    width: 30%;
+    height: 30%;
+    margin-bottom: 2%;
+    border-radius: 15px;
 }
 
-/* form label {
-    align-items: center;
-    text-align: center;
-} */
+input[type="radio"] {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5%;
+    accent-color: var(--red);
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 5% auto;
+    padding: 2%;
+    font-size: 2rem;
+    background-color: var(--button);
+    color: var(--background);
+    border: none;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--green);
+    cursor: pointer;
+}

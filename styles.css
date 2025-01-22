@@ -117,9 +117,13 @@ section {
     height: 100vh;
 }
 
+img {
+    border-radius: 15px;
+}
 
 img:hover {
     border: #e30b0b 5px inset;
+    border-radius: 5px;
     cursor: pointer;
 }
 
