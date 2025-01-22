@@ -76,6 +76,11 @@ nav {
     background-color: var(--transparent);
 }
 
+#logo:hover {
+    border: none;
+    pointer-events: none;
+}
+
 ul {
     list-style-type: none;
     margin-left: auto;
@@ -224,17 +229,4 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
-}
-
- /* quiz.html*/
-
-form img {
-    width: vw 10;
-    height: vh 10;
-    margin: 1% 0%;
-}
-
-form label {
-    align-items: center;
-    text-align: center;
 }

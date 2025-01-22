@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aespa Member Quiz</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="member-quiz.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js"></script>
 </head>
@@ -14,39 +14,51 @@
     <h1>Aespa Member Quiz</h1>
     <div id="form">
         <form action=""> <!-- Whenever you click submit, JS will check the answers, highlight the wrong and right answer ONLY ON QUESTIONS THAT ARE WRONG, and give you a score!-->
-            <label for="winter">Who is this?</label><br>
-            <img src="images/winter-aespa.jpeg" alt="winter-aespa"><br>
-            <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
-            <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
-            <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
-            <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br><br>
-
-            <label for="giselle">Who is this?</label><br>
-            <img src="images/giselle-aespa.jpeg" alt="giselle-aespa"><br>
-            <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
-            <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
-            <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
-            <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br><br>
-            
+            <div class="wrapper">
+                <label for="winter">Who is this?</label><br>
+                <img src="images/winter-aespa.jpeg" alt="winter-aespa"><br>
+                <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
+                <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
+                <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
+                <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br><br>
+            </div>
             
 
-            <label for="karina">Who is this?</label><br>
-            <img src="images/karina-aespa.jpeg" alt="karina-aespa"><br>
-            <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
-            <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
-            <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
-            <input type="radio" name="karina-radio" id="karina-radio">Karina<br><br>
+
+            <div class="wrapper">
+                <label for="giselle">Who is this?</label><br>
+                <img src="images/giselle-aespa.jpeg" alt="giselle-aespa"><br>
+                <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
+                <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
+                <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
+                <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br><br>
+            </div>
 
 
-            <label for="ningning">Who is this?</label><br>
-            <img src="images/ningning-aespa.jpeg" alt="ningning-aespa"><br>
-            <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
-            <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
-            <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
-            <input type="radio" name="winter-radio" id="winter-radio">Winter<br><br>
+            <div class="wrapper">
+                <label for="karina">Who is this?</label><br>
+                <img src="images/karina-aespa.jpeg" alt="karina-aespa"><br>
+                <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
+                <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
+                <input type="radio" name="winter-radio" id="winter-radio">Winter<br>
+                <input type="radio" name="karina-radio" id="karina-radio">Karina<br><br>
+            </div>
+            
+            
+            
+            <div class="wrapper">
+                <label for="ningning">Who is this?</label><br>
+                <img src="images/ningning-aespa.jpeg" alt="ningning-aespa"><br>
+                <input type="radio" name="ningning-radio" id="ningning-radio">NingNing<br>
+                <input type="radio" name="giselle-radio" id="giselle-radio">Giselle<br>
+                <input type="radio" name="karina-radio" id="karina-radio">Karina<br>
+                <input type="radio" name="winter-radio" id="winter-radio">Winter<br><br>
+            </div>
+            
 
-            <input type="submit" value="Submit">
-
+            <div class="wrapper">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>
