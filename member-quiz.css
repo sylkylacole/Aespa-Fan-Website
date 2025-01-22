@@ -14,11 +14,18 @@
 * {
     background-color: var(--background);
     color: var(--text);
-    margin: auto;
 }
 
 body {
-    
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+
 }
 
 #form {
@@ -28,11 +35,12 @@ body {
 
 
 form img {
-    width: 10vw;
-    height: 10vh;
+    width: 50%;
+    height: 50%;
+    /* margin: 5%; */
 }
 
-form label {
+/* form label {
     align-items: center;
     text-align: center;
-}
+} */
