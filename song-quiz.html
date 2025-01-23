@@ -1,11 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aespa Song Quiz</title>
+
+    <link rel="stylesheet" href="song-quiz.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 <body>
-    
+    <h1>Aespa Song Quiz</h1>
+    <div id="form">
+        <form action=""> <!-- Whenever you click submit, JS will check the answers, highlight the wrong and right answer ONLY ON QUESTIONS THAT ARE WRONG, and give you a score!-->
+            <span class="wrapper">
+                <legend>1. What song is this?</legend><br>
+                <video controls src="videos/spicy-clip.mp4" class="video-clip" id="spicy-clip"></video><br>
+
+                <input type="radio" name="spicy" id="armageddon-radio.1" value="Armageddon">
+                <label for="armageddon-radio.1">Armageddon</label><br>
+
+                <input type="radio" name="spicy" id="whiplash-radio.1">
+                <label for="whiplash-radio.1">Whiplash</label><br>
+
+                <input type="radio" name="spicy" id="spicy-radio.1">
+                <label for="spicy-radio.1">Spicy</label><br>
+
+                <input type="radio" name="spicy" id="black-mamba-radio.1">
+                <label for="black-mamba-radio.1">Black Mamba</label>
+            </span>
+            
+
+
+            <span class="wrapper">
+                <legend>2. What song is this?</legend><br>
+                <video controls src="videos/whiplash-clip.mp4" class="video-clip" id="whiplash-clip"></video><br>
+
+                <input type="radio" name="whiplash-radio" id="spicy-radio.2">
+                <label for="spicy-radio.2">Spicy</label><br>
+
+                <input type="radio" name="whiplash-radio" id="armageddon-radio.2">
+                <label for="armageddon-radio.2">Armageddon</label><br>
+
+                <input type="radio" name="whiplash-radio" id="black-mamba-radio.2">
+                <label for="black-mamba-radio.2">Black Mamba</label><br>
+
+                <input type="radio" name="whiplash-radio" id="whiplash-radio.2">
+                <label for="whiplash-radio.2">Whiplash</label>
+            </span>
+
+
+            <span class="wrapper">
+                <legend>3. What song is this?</legend><br>
+                <video controls src="videos/black-mamba-clip.mp4" class="video-clip" id="black-mamba-clip"></video><br>
+
+                <input type="radio" name="black-mamba-radio" id="black-mamba-radio.3">
+                <label for="black-mamba-radio.3">Black Mamba</label><br>
+
+                <input type="radio" name="black-mamba-radio" id="whiplash-radio.3">
+                <label for="whiplash-radio.3">Whiplash</label><br>
+
+                <input type="radio" name="black-mamba-radio" id="spicy-radio.3">
+                <label for="spicy-radio.3">Spicy</label><br>
+
+                <input type="radio" name=black-mamba-radio" id="armageddon-radio.3">
+                <label for="armageddon-radio.3">Armageddon</label>
+            </span>
+            
+            
+            
+            <span class="wrapper">
+                <legend>4. What song is this?</legend><br>
+                <video controls preload="auto" src="videos/armageddon-clip.mp4" class="video-clip" id="armageddon-clip"></video><br>
+
+                <input type="radio" name="armageddon-radio" id="black-mamba-radio.4">
+                <label for="black-mamba-radio.4">Black Mamba</label><br>
+
+                <input type="radio" name="armageddon-radio" id="whiplash-radio.4">
+                <label for="whiplash-radio.4">Whiplash</label><br>
+
+                <input type="radio" name="armageddon-radio" id="armageddon-radio.4">
+                <label for="armageddon-radio.4">Armageddon</label><br>
+
+                <input type="radio" name="armageddon-radio" id="spicy-radio.4">
+                <label for="spicy-radio.4">Spicy</label>
+            </span>
+            
+
+
+            <span class="wrapper" id="submit-button-wrapper">
+                <input type="submit" value="Submit" id="submit-button">
+            </span>
+        </form>
+        <a href="index.html" id="home">Back to home</a>
+    </div>
 </body>
 </html>
