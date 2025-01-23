@@ -10,12 +10,20 @@
     --button: #1a3e0a85;
 }
 
+@font-face {
+    font-family: "BoldFont";
+    src: url(fonts/theboldfont.ttf) format("truetype");
+    font-style: normal;
+}
+
+
 /* Universal css */
 * {
     background-color: var(--background);
     color: var(--text);
     margin: 0%;
     padding: 0%;
+    font-family: "BoldFont", sans-serif;
 }
 
 
@@ -103,6 +111,10 @@ ul li a {
     padding: 0%;
 }
 
+ul li a:active {
+    color: var(--red);
+}
+
 
 section {
     display: flex;
@@ -141,7 +153,7 @@ video {
 /* about */
 
 h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     margin: auto;
 }
@@ -161,8 +173,9 @@ p {
 }
 
 .description {
-    width: 100ch;
+    width: 75ch;
     margin: auto;
+    margin-top: 0.5%;
 }
 
 .member-name {

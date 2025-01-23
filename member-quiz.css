@@ -10,10 +10,17 @@
     --button: #1a3e0a85;
 }
 
+@font-face {
+    font-family: "BoldFont";
+    src: url(fonts/theboldfont.ttf) format("truetype");
+    font-style: normal;
+}
+
 /* Universal css */
 * {
     background-color: var(--background);
     color: var(--text);
+    font-family: BoldFont, sans-serif;
 }
 
 body {
