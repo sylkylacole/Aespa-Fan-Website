@@ -101,4 +101,5 @@ input[type="submit"]:hover {
 #home {
     color: var(--text);
     font-size: xx-large;
+    margin-bottom: 5%;
 }

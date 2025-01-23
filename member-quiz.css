@@ -82,3 +82,9 @@ input[type="submit"]:hover {
     background-color: var(--green);
     cursor: pointer;
 }
+
+#home {
+    color: var(--text);
+    font-size: xx-large;
+    margin-bottom: 15%;
+}
