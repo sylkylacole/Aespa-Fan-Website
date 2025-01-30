@@ -1,3 +1,5 @@
+// import html elements to js
+
 const scoreDiv = document.getElementById("score-div");
 const submitButton = document.getElementById("submit-button");
 
@@ -5,7 +7,7 @@ let score = 0;
 
 console.log(score);
 
-
+// create the function for what occurs when you click the button
 
 function submitQuiz() {
     const q1 = document.getElementById("q1").value;
@@ -31,6 +33,8 @@ function submitQuiz() {
     console.log(score);
 }
 
+
+// create the feature where the submit button scrolls to the top when pressed so that you can see the score
 
 var rootElement = document.documentElement;
 
