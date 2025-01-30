@@ -5,8 +5,6 @@ const submitButton = document.getElementById("submit-button");
 
 let score = 0;
 
-console.log(score);
-
 // create the function for what occurs when you click the button
 
 function submitQuiz() {
