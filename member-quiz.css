@@ -35,10 +35,6 @@ h1 {
     font-size: 5rem;
 }
 
-#form {
-
-}
-
 span {
     display: inline-block;
     margin-bottom: 5%;
@@ -74,7 +70,7 @@ input[type="radio"] {
     vertical-align: middle;
 }
 
-input[type="submit"] {
+input[type="button"] {
     display: block;
     margin: 5% auto;
     padding: 2%;
@@ -85,7 +81,7 @@ input[type="submit"] {
     border-radius: 15px;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: var(--green);
     cursor: pointer;
 }
@@ -99,4 +95,10 @@ input[type="submit"]:hover {
 #home:hover {
     color: var(--red);
     cursor: pointer;
+}
+
+#score-div {
+    font-size: 2rem;
+    margin-bottom: 5%;
+    color: var(--red);
 }

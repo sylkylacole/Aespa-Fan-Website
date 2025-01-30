@@ -1,25 +1,52 @@
-// Import questions, answers, etc etc and give an id or class
+const scoreDiv = document.getElementById("score-div");
+const submitButton = document.getElementById("submit-button");
 
-
-const questions = document.getElementsByClassName("question-span"); // Import the questions
-const scoreArea = document.getElementById("score-div"); // Import the score area to display - well - the score
-const answers = document.getElementsByClassName("wrapper");
-
-
-
-// Set the score
 let score = 0;
 
+console.log(score);
 
 
 
+function submitQuiz() {
+    const q1 = document.getElementById("q1").value;
+    const q2 = document.getElementById("q2").value;
+    const q3 = document.getElementById("q3").value;
+    const q4 = document.getElementById("q4").value;
+
+    if (q1 === "c") {
+        score += 1;
+    }
+    if (q2 === "d") {
+        score += 1;
+    }
+    if (q3 === "d") {
+        score += 1;
+    }
+    if (q4 === "a") {
+        score += 1;
+    }
+
+    scoreDiv.innerHTML = `Your score is ${score}/4`;
+
+    console.log(score);
+}
+
+
+var rootElement = document.documentElement;
+
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    submitQuiz();
+});
+
+function scrollToTop() {
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+submitButton.addEventListener("click", scrollToTop);
 
 
 
-// Import the submit button
-
-const submit = document.getElementById("submit-button");
-
-// When you click submit, check if the answers are correct
-
-// Count correct answers and display it in a ratio via html below the title of the html page
