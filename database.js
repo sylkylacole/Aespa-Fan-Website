@@ -1,6 +1,8 @@
+// Member Quiz
+
 var data = [
     {
-        question: "Who is this?",
+        question: "1. Who is this?",
         answers: {
             a: "Karina",
             b: "Giselle",
@@ -10,7 +12,7 @@ var data = [
         correctAnswer: "c"
     },
     {
-        question: "Who is this?",
+        question: "2. Who is this?",
         answers: {
             a: "Winter",
             b: "Karina",
@@ -20,7 +22,7 @@ var data = [
         correctAnswer: "d"
     },
     {
-        question: "Who is this?",
+        question: "3. Who is this?",
         answers: {
             a: "Ningning",
             b: "Giselle",
@@ -30,7 +32,7 @@ var data = [
         correctAnswer: "d"
     },
     {
-        question: "Who is this?",
+        question: "4. Who is this?",
         answers: {
             a: "Ningning",
             b: "Giselle",

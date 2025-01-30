@@ -1,42 +1,25 @@
-// // Import questions, answers, etc etc and give an id or class
-
-// const scoreArea = document.getElementById("score-div");
+// Import questions, answers, etc etc and give an id or class
 
 
-
-// // Set the score
-// let score = 0;
+const questions = document.getElementsByClassName("question-span"); // Import the questions
+const scoreArea = document.getElementById("score-div"); // Import the score area to display - well - the score
+const answers = document.getElementsByClassName("wrapper");
 
 
 
+// Set the score
+let score = 0;
 
 
 
 
-// // Import the submit button
-
-// const submit = document.getElementById("submit-button");
-
-// // When you click submit, check if the answers are correct
-
-// // Count correct answers and display it in a ratio via html below the title of the html page
 
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
-    function showQuestions(questions, quizContainer){
-        // code will go here
-    };
+// Import the submit button
 
-    function showResults(questions, quizContainer, resultsContainer){
-        // code will go here
-    };
+const submit = document.getElementById("submit-button");
 
-    // show the questions
-    showQuestions(questions, quizContainer);
+// When you click submit, check if the answers are correct
 
-    // when user clicks submit, show results
-    submitButton.onclick = function(){
-        showResults(questions, quizContainer, resultsContainer);
-    };
-};
+// Count correct answers and display it in a ratio via html below the title of the html page
