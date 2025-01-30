@@ -95,3 +95,8 @@ input[type="submit"]:hover {
     font-size: xx-large;
     margin-bottom: 15%;
 }
+
+#home:hover {
+    color: var(--red);
+    cursor: pointer;
+}

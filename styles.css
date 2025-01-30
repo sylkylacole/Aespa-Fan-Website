@@ -147,7 +147,20 @@ video {
     background-color: var(--background);
 }
 
-
+html, body {
+    min-height: 100%;
+    position: relative;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* dim the background */
+}
 
 
 /* about */
