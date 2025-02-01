@@ -84,7 +84,7 @@ input[type="radio"] {
     vertical-align: middle;
 }
 
-input[type="submit"] {
+input[type="button"] {
     display: inline-block;
     margin: 5% auto;
     padding: 0.2%;
@@ -95,7 +95,7 @@ input[type="submit"] {
     border-radius: 15px;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: var(--green);
     cursor: pointer;
     color: var(--red);
@@ -113,5 +113,11 @@ input[type="submit"]:hover {
 }
 
 #home:hover {
+    color: var(--red);
+}
+
+#score-div {
+    font-size: 2rem;
+    margin-bottom: 5%;
     color: var(--red);
 }
