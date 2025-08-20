@@ -2,33 +2,34 @@
 
 const scoreDiv = document.getElementById("score-div");
 const submitButton = document.getElementById("submit-button");
+const q1 = document.getElementById("spicy-radio.1");
+const q2 = document.getElementById("whiplash-radio.2");
+const q3 = document.getElementById("black-mamba-radio.3");
+const q4 = document.getElementById("armageddon-radio.4");
 
 let score = 0;
 
 // create the function for what occurs when you click the button
 
 function submitQuiz() {
-    const q1 = document.getElementById("q1").value;
-    const q2 = document.getElementById("q2").value;
-    const q3 = document.getElementById("q3").value;
-    const q4 = document.getElementById("q4").value;
-
-    if (q1 === "c") {
+    if (q1.checked) {
         score += 1;
     }
-    if (q2 === "d") {
+    if (q2.checked) {
         score += 1;
     }
-    if (q3 === "d") {
+    if (q3.checked) {
         score += 1;
     }
-    if (q4 === "a") {
+    if (q4.checked) {
         score += 1;
     }
 
     scoreDiv.innerHTML = `Your score is ${score}/4`;
 
     console.log(score);
+
+    score = 0
 }
 
 
@@ -39,6 +40,7 @@ var rootElement = document.documentElement;
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
     submitQuiz();
+    score = 0;
 });
 
 function scrollToTop() {
