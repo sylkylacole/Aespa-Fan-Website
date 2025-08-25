@@ -1,13 +1,13 @@
 /* color definitions */
 :root {
-    --text: #1a1a1a;
-    --background: #ededed;
+    --text: #CF4B20;
+    --background: #070707;
     --transparent: #ededed00;
-    --header: #1a1a1a85;
-    --red: #e30b0b;
+    --header: #a9aeb743;
+    --gold: #BE8D4D;
     --gray: #9e9e9e;
-    --green: #1a3e0a;
-    --button: #1a3e0a85;
+    --orange: #CF4B20;
+    --button: #6d40337b; /* Unchanged */
 }
 
 @font-face {
@@ -82,7 +82,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: var(--green);
+    background-color: var(--orange);
     cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ input[type="button"]:hover {
 }
 
 #home:hover {
-    color: var(--red);
+    color: var(--gold);
     cursor: pointer;
 }
 
