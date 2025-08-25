@@ -2,7 +2,7 @@
 
 const scoreDiv = document.getElementById("score-div");
 const submitButton = document.getElementById("submit-button");
-const q1 = document.getElementById("spicy-radio.1");
+const q1 = document.getElementById("dirty-work-radio.1");
 const q2 = document.getElementById("whiplash-radio.2");
 const q3 = document.getElementById("black-mamba-radio.3");
 const q4 = document.getElementById("armageddon-radio.4");
