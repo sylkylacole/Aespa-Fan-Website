@@ -32,8 +32,8 @@ body {
 }
 
 button {
-    width: 10vw;
-    height: 10vh;
+    width: 7vw;
+    height: 5vh;
     color: var(--background);
     background-color: var(--button);
     margin-top: 5%;
@@ -64,7 +64,7 @@ button a:hover {
 
 header {
     background-color: var(--header);
-    height: 10vh;
+    height: 5vh;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -81,7 +81,7 @@ nav {
 }
 
 #logo {
-    width: 10%;
+    width: 5%;
     float: left;
     padding: 0%;
     background-color: var(--transparent);
@@ -101,7 +101,7 @@ ul {
 
 ul li {
     float: right;
-    margin: 1.5% 5%;
+    margin: 0.7% 5%;
     padding: 0%;
 }
 

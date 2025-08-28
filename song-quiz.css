@@ -43,7 +43,7 @@ span {
     display: inline-block;
     margin-bottom: 1%;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
 }
 
@@ -102,7 +102,7 @@ input[type="button"]:hover {
 }
 
 #submit-button-wrapper {
-    height: 50vh;
+    /* height: 50vh; */
     width: 50vw;
 }
 
@@ -113,7 +113,7 @@ input[type="button"]:hover {
 }
 
 #home:hover {
-    color: var(--red);
+    color: var(--gold);
 }
 
 #score-div {
