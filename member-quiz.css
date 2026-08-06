@@ -1,7 +1,7 @@
 /* color definitions */
 :root {
-    --text: #CF4B20;
-    --background: #070707;
+    --text: #A6BC02;
+    --background: #A7E000;
     --transparent: #ededed00;
     --header: #a9aeb743;
     --gold: #BE8D4D;
@@ -18,16 +18,18 @@
 
 /* Universal css */
 * {
-    background-color: var(--background);
     color: var(--text);
-    font-family: BoldFont, sans-serif;
+    font-family: "BoldFont", sans-serif;
 }
 
 body {
     align-items: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 2rem 1rem 4rem;
+    box-sizing: border-box;
+    background-color: var(--background);
 }
 
 h1 {
@@ -38,6 +40,15 @@ h1 {
 span {
     display: block;
     margin-bottom: 5%;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 legend {
@@ -55,17 +66,24 @@ form label {
 
 
 form img {
-    width: 30%;
-    height: 30%;
+    width: min(100%, 30%);
+    height: auto;
     margin-bottom: 2%;
     border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+form img:hover {
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 input[type="radio"] {
     width: 2rem;
     height: 2rem;
     margin-right: 0.5%;
-    accent-color: var(--red);
+    accent-color: var(--text);
     font-size: 2rem;
     vertical-align: middle;
 }
@@ -73,17 +91,22 @@ input[type="radio"] {
 input[type="button"] {
     display: inline-block;
     margin: 5% auto;
-    padding: 0.2%;
+    padding: 0.6rem 1.2rem;
     font-size: 2rem;
     background-color: var(--button);
     color: var(--background);
     border: none;
     border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-input[type="button"]:hover {
-    background-color: var(--orange);
+input[type="button"]:hover,
+input[type="button"]:focus-visible {
+    background-color: var(--button);
     cursor: pointer;
+    color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 #home {
@@ -93,12 +116,18 @@ input[type="button"]:hover {
 }
 
 #home:hover {
-    color: var(--gold);
+    color: var(--text);
     cursor: pointer;
 }
 
 #score-div {
     font-size: 2rem;
     margin-bottom: 5%;
-    color: var(--red);
+    color: var(--background);
+    background: rgba(0, 0, 0, 0.18);
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }

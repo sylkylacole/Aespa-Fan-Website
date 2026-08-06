@@ -1,13 +1,12 @@
 /* color definitions */
 :root {
-    --text: #CF4B20;
-    --background: #070707;
+    --text: #A6BC02;
+    --background: #A7E000;
     --transparent: #ededed00;
-    --header: #a9aeb743;
-    --gold: #BE8D4D;
-    --gray: #9e9e9e;
-    --orange: #CF4B20;
-    --button: #6d40337b; /* Unchanged */
+    --yellow: #DAE71C;
+    --lime: #D7EB00;
+    --yellowgreen: #B2C623;
+    --button: var(--yellowgreen); /* Unchanged */
 }
 
 @font-face {
@@ -19,7 +18,6 @@
 
 /* Universal css */
 * {
-    background-color: var(--background);
     color: var(--text);
     margin: 0%;
     padding: 0%;
@@ -27,22 +25,39 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
+    background-color: var(--background);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 button {
     width: 7vw;
+    min-width: 120px;
     height: 5vh;
+    min-height: 44px;
     color: var(--background);
     background-color: var(--button);
     margin-top: 5%;
     border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-button:hover {
+button:hover,
+button:focus-visible {
     border: 5px var(--gold) outset;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 button a {
@@ -56,32 +71,46 @@ button a:visited {
 }
 
 button a:hover {
-    color: var(--gold);
+    color: var(--yellow);
 }
 
 
 /* index.html */
 
 header {
-    background-color: var(--header);
-    height: 5vh;
-    position: sticky;
+    background: rgba(0, 0, 0, 0.18);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: auto;
+    position: fixed;
     top: 0;
-    z-index: 100;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
 }
 
 
-a:hover {
+a:hover,
+a:focus-visible {
     color: var(--gold);
+    background-color: transparent;
 }
-
 
 nav {
     text-align: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #logo {
-    width: 5%;
+    width: clamp(48px, 8vw, 90px);
+    height: auto;
     float: left;
     padding: 0%;
     background-color: var(--transparent);
@@ -96,25 +125,26 @@ ul {
     list-style-type: none;
     margin-left: auto;
     margin-right: auto;
-    display: inline;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 ul li {
-    float: right;
-    margin: 0.7% 5%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 ul li a {
     display: block;
     color: var(--text);
-    background-color: var(--header);
+    background-color: transparent;
     text-decoration: none;
     padding: 0%;
 }
 
 ul li a:active {
-    color: var(--gold);
+    color: var(--yellowgreen);
 }
 
 
@@ -122,14 +152,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     overflow: hidden;
+    padding: 6rem 1.5rem 3rem;
+    box-sizing: border-box;
 }
 
 #home, #about, #baest-releases, #member-quiz, #song-quiz {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 img {
@@ -137,7 +169,7 @@ img {
 }
 
 img:hover {
-    border: var(--orange) 5px inset;
+    border: var(--yellow) 5px inset;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -152,16 +184,63 @@ video {
 html, body {
     min-height: 100%;
     position: relative;
-  }
-  
+}
+
+#home {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    z-index: 0;
+}
+
 .overlay {
     position: absolute;
-    top: 10;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5); /* dim the background */
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: 2rem;
+}
+
+.hero-tag {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    color: var(--gold);
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 
@@ -181,10 +260,28 @@ p {
 
 .content {
     margin-top: 5%;
-    display: inline;
-    position: relative;
-    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 1100px);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+}
+
+#about .content,
+#baest-releases .content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+#about .content > h2,
+#about .content > .description,
+#baest-releases .content > h2 {
+    grid-column: 1 / -1;
 }
 
 .description {
@@ -199,19 +296,22 @@ p {
     margin: 2rem;
 }
 
-#members-left {
-    float: left;
-
-}
-
-#members-right {
-    float: right;
+#members-left,
+#members-right,
+#release-left,
+#release-right {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .members {
-    width: 25%;
-    height: 25%;
-    margin: auto;
+    width: min(100%, 320px);
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
 }
 
 
@@ -223,28 +323,21 @@ p {
     margin: 2rem;
 }
 
-#release-left {
-    float: left;
-
-}
-
-#release-right {
-    float: right;
-}
-
 .release {
-    width: 25%;
-    height: 25%;
-    margin: auto;
+    width: min(100%, 320px);
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
 }
 
 
 /* Member quiz */
 
 .group-photo {
-    width: 50%;
-    height: 50%;
+    width: min(100%, 480px);
+    height: auto;
     margin: 5% auto;
+    display: block;
 }
 
 
@@ -262,4 +355,69 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
+    padding: 0 1rem 2rem;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about .content,
+    #baest-releases .content {
+        grid-template-columns: 1fr;
+    }
+
+    .description {
+        width: min(100%, 75ch);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.75rem 1rem;
+    }
+
+    ul {
+        gap: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 5.5rem 1rem 2rem;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .hero-content {
+        padding: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .members,
+    .release {
+        width: min(100%, 240px);
+    }
+
+    .group-photo {
+        width: min(100%, 320px);
+    }
+
+    button {
+        width: auto;
+        min-width: 140px;
+        padding: 0 1rem;
+    }
 }
